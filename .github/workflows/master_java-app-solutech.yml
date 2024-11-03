@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '17'          
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -39,7 +39,7 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write 
-  
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
