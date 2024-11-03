@@ -3,11 +3,6 @@
 
 name: Build and deploy JAR app to Azure Web App - java-app-solutech
 
-task: UseJavaVersion@1
-  inputs:
-    versionSpec: '11'
-    jdkArchitecture: 'x64'
-    
 on:
   push:
     branches:
